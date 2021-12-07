@@ -4567,6 +4567,11 @@ input[type=button].btn-block {
   font-weight: bold;
 }
 
+.activeBrand {
+  border-radius: 12px;
+  border:3px solid orangered;
+}
+
 .navbar-text {
   display: inline-block;
   padding-top: 0.5rem;

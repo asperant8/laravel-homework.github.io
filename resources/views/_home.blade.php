@@ -1,9 +1,28 @@
 @extends('mainpage')
 @section('content')
-<x-carousel id="carousel-1" :indicators="true" :control="true" class="mb-3" :items="[
-    ['image' => ['src' => 'https://www.aspca.org/sites/default/files/styles/feature_slider_1502x700/public/billboard/desktop/dec-ea1_this-time-next-year_112921_homepage.jpg?itok=7G7kkYP5', 'lazyload' => false]],
-    ['image' => ['src' => 'https://www.aspca.org/sites/default/files/styles/feature_slider_1502x700/public/billboard/desktop/december-another-day_112420_homepage.jpg?itok=8Yj9cyFB', 'lazyload' => false]],
-  ]"/>
+
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://www.aspca.org/sites/default/files/styles/feature_slider_1502x700/public/billboard/desktop/dec-ea1_this-time-next-year_112921_homepage.jpg?itok=7G7kkYP5" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://www.aspca.org/sites/default/files/styles/feature_slider_1502x700/public/billboard/desktop/december-another-day_112420_homepage.jpg?itok=8Yj9cyFB" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
   <div class="container">
       <h1 style="text-align: center; opacity:30%;">Original site: <a href="https://www.aspca.org/">ASPCA</a></h1>
     <h1 class="" style="text-align: center; margin-bottom:2rem">The Latest</h1>
